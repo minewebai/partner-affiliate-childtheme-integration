@@ -1,0 +1,120 @@
+/* =======================
+   Body Tweaks
+======================= */
+body {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* =======================
+   Partner Listing Wrapper
+======================= */
+.partner-listing-wrapper {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 20px !important; /* space between cards */
+    padding: 10px !important;
+}
+
+/* =======================
+   Partner Card
+======================= */
+.partner-card {
+    background: #fff !important;
+    border: 1px solid #ccc !important;
+    border-radius: 8px !important;
+    padding: 15px !important;
+    width: 220px !important; /* default desktop width */
+    box-sizing: border-box !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+    min-width: 0 !important; /* prevents flex from shrinking too much */
+}
+
+/* =======================
+   Avatar
+======================= */
+.partner-avatar {
+    width: 70px !important;
+    height: 70px !important;
+    object-fit: cover !important;
+    margin-bottom: 10px !important;
+    border-radius: 50% !important;
+}
+
+/* =======================
+   Name and City
+======================= */
+.partner-name {
+    display: block !important;
+    font-weight: bold !important;
+    margin-bottom: 5px !important;
+    word-break: break-word !important;
+}
+
+.partner-city {
+    font-size: 0.9rem !important;
+    color: #555 !important;
+    margin-bottom: 10px !important;
+}
+
+/* =======================
+   Bio
+======================= */
+.partner-bio {
+    font-size: 0.85rem !important;
+    color: #333 !important;
+    margin-bottom: 10px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+}
+
+/* =======================
+   Listing Counts
+======================= */
+.listing-counts span {
+    display: inline-block !important;
+    margin: 2px 5px !important;
+    font-size: 0.8rem !important;
+}
+
+/* =======================
+   Reviews
+======================= */
+.author-review-box {
+    font-size: 0.85rem !important;
+}
+
+/* =======================
+   Responsive Mobile
+======================= */
+@media (max-width: 768px) {
+    .partner-listing-wrapper {
+        display: flex !important;
+        flex-direction: column !important; /* vertical stack */
+        align-items: center !important;
+        gap: 15px !important;
+        padding: 5px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .partner-card {
+        width: 100% !important;
+        max-width: 400px !important;
+        margin: 0 auto !important;
+    }
+
+    .partner-avatar {
+        width: 80px !important;
+        height: 80px !important;
+    }
+}
+
+/* =======================
+   Optional: Hover Effects
+======================= */
+.partner-card:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+}
